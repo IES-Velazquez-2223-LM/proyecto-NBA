@@ -37,17 +37,28 @@
     <h2><a  id="not1" href="/articles/noticia1.html">El Team Pau se proclama campeón del Rising Star Challenge</a></h2>
     
     <figure>
+        <!--El W3 marca error si se mete la etiqueta <a> dentro de picture, cambiala como está en la noticia de abajo-->
         <picture>
             <source media="(max-width: 799px)" srcset="/images/gasolRisingSmallindex.jpg">
             <source media="(min-width: 800px)" srcset="/images/gasolRisingSmall.jpg">
+            <!--He elimado los atributo width y height porque hacían que la imagen dejara de ser responsive.
+            Aparte, creo que poner en img src el gasol rising, sin que sea ninguna de las que está en source media, hace que no coja la imagen chica en los moviles-->
             <a href="/articles/noticia1.html" title="Pau Gasol y su equipo"><img src="/images/gasolRising.jpg" 
-            alt="Pau Gasol y su staff con el equipo de jugadores" width="500" height="300"></a>
+            alt="Pau Gasol y su staff con el equipo de jugadores"></a>
         </picture>
         <figcaption>Pau Gasol posa con su equipo y el trofeo de campeones</figcaption>
     </figure>
 
     <div>
         <h2><a  id="not2" href="/articles/noticia2.html">Kyrie Irving puede ser la clave para las opciones de Dallas al anillo</a></h2>
+        <p>Irving sacudía el mundo de la NBA a principios de febrero cuando anunciaba... <a href="/articles/noticia2.html">Seguir leyendo</a></p>
+        <figure>
+            <a href="/articles/noticia2.html"><picture>
+                <source media="(max-width: 799px)" srcset="/images/luka-irving-380-214.jpg">
+                <source media="(min-width: 800px)" srcset="/images/luka-irving-761-429.jpg">
+                <img src="/images/luka-irving-761-429.jpg" alt="Luka Doncic junto a Kyrie Irving">
+            </picture></a>
+        </figure>
     </div>
 
 
@@ -59,9 +70,7 @@
 <!--
 Tareas por hacer:
  *Reestructurar la pagina principal, poner en h1 el titulo de la pagina. Añadir imagen de portada
- *Enlazar la pagina principal con las noticias. Añadir los botones e imagenes de cada noticia
  *Terminar noticia 1. Añadir video de youtube y boton de redireccionamiento
- *Apartado Multimedia
  -->
 
 
