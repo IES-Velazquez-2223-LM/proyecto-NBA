@@ -33,6 +33,8 @@ footer{
 }
 .noticia{
     background-color: beige;
-    border-radius: 80%;
-    border-top-width: 55cap;
+    margin-top: 3%;
+    margin-left: 17%;
+    margin-right: 17%;
+    border-style:solid ;
 }
