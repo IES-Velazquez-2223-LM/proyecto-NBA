@@ -8,7 +8,7 @@ main{
     text-align: center;
 }
 header{
-    background-color: rgba(182, 154, 209, 0.893);
+    background-color: rgba(27, 174, 197, 0.893);
     text-align: center;
 }
 footer{
@@ -30,4 +30,9 @@ footer{
 #MVP{
     background-color: rgb(163, 240, 108);
     border-radius: 20%;
+}
+.noticia{
+    background-color: beige;
+    border-radius: 80%;
+    border-top-width: 55cap;
 }
