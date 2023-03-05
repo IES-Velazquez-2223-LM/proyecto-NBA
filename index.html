@@ -57,6 +57,13 @@
 
                    <img src="buttons/buttonMVP.png" alt=""> 
                 </picture></a>
+                <a href="#Formulario"><picture>
+                    <source media="(max-width: 799px)" srcset="buttons/buttonFormularioSmall.png">
+
+                    <source media="(max-width: 799px)" srcset="buttons/buttonFormulario.png">
+
+                   <img src="buttons/buttonFormulario.png" alt=""> 
+                </picture></a>
             </nav>
         </header>
         <main>
@@ -245,3 +252,63 @@
 </body>
 
 </html>
+
+
+<!-- 
+    CODIGO HTML PARA EL BOTON DEL FORMULARIO: <a class="button" href="#">Formulario</a>
+    
+    
+    CÓDIGO CSS PARA EL BOTON DEL FORMULARIO
+
+    .button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 18px;
+    border: 0px solid #b61b1b;
+    border-radius: 15px;
+    background: #ff3333;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff3333), to(#b61b1b));
+    background: -moz-linear-gradient(top, #ff3333, #b61b1b);
+    background: linear-gradient(to bottom, #ff3333, #b61b1b);
+    -webkit-box-shadow: #ff3d3d 0px 0px 12px 0px;
+    -moz-box-shadow: #ff3d3d 0px 0px 12px 0px;
+    box-shadow: #ff3d3d 0px 0px 12px 0px;
+    text-shadow: #6b1010 1px 1px 1px;
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    border: 0px solid #d62020;
+    background: #ff3d3d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff3d3d), to(#da2020));
+    background: -moz-linear-gradient(top, #ff3d3d, #da2020);
+    background: linear-gradient(to bottom, #ff3d3d, #da2020);
+    color: #ffffff;
+    text-decoration: none;
+}
+.button:active {
+    background: #b61b1b;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b61b1b), to(#b61b1b));
+    background: -moz-linear-gradient(top, #b61b1b, #b61b1b);
+    background: linear-gradient(to bottom, #b61b1b, #b61b1b);
+}
+.button:before{
+    content:  "\0000a0";
+    display: inline-block;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 0 4px -6px -4px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAAE4UlEQVRIiY2WW2wUZRTHfzM7O91ul227Lb3RK6VVLhG5FgIqsRSBGCRKojSpClQSogk+iG8EY0IgJgqaYGKk8kBSXgwGNWovkVoBpRWw3ATabi+2pZTusmy3uzszO/P5ABTqLpfz+J3/9/+fy8w5n8Rj7OWtW4mGLJcEhYAHQQyJYWCoqf6g/rj70sMcVdVbnCBVO5MdNWUlRQsL83Kd7ikujFiMUf8tvP0Dw/2DQ42WJQ4haG06ctB6YgEhBNt37Wl/cVnFwhcWzEMb9JHui2AFwxAzQbUjpTkZlA1+unrRavj9VIumG9ua6g9ee6zAD80teYYRa1///PI84/Q1Qhd6+OjSST4oXUCG6oiPMCWJ4ZwU9v/ZErrS2/dWDOvo8fpvJvzyg+B1m9/bsGbF8u/WPTUnL3L4OEZHD0kWbCqczdf9F7CEiM92XCO728+OomddyUlJRxTkDQ/6bfdrXrvyucXzjy2dkp2v/XIWjNgEKEN10B8Zw29oFDvdcSKaZbLvchs1hbNtNy1tbWrp08e8F8/enMigamOt6klLPbCtcpWsN3eAFd+v13LLaBzpI2LGJp0HDI09ne2sySpmkSuT7QXPuByK8lVV9Tvy/RJJvLq+ckW5eqozITlAkmxjTVYx39/wTpydD47ySddfvD6tnEVp2QDkqE5emlq0HMSqCQHVbq9Z4c5FBMMJye/ZMk8e54OjdARH+bT7DC2+AT6csZCZLs8k3OqsImySvAVAqqqudcwsLbm+Z3pFmgiMx5GaQnBTj3AtdItLYz4uh3w4ZIV3i+cm7AeAAHZcavV3jd+epgDFZkRP+7nzMpZloVkmIdPAr0e5HdMwhSBDTaYsJY212cVsKpzFx1dPM83hemimElDkdHu6wrfzFRCZmcLGFJsdWZFIkm2k2Ox4VAduRSVJtsURzE2dSltgmHJXOkFDx0LgkG14VAcpNjsAHrsDIEcBycqzJbPMk/fI+gPolslJ/xCXx3wcG+5mcVoObkVFkWQiVgy/HiVk6mSpTkKmAYACjAS0yCOJBYJW3yANI30sSc/l/enz+dx7js2Fs3Erahx+KBpiv/ccwKgCYqA/MhYEEnYsbMb4sreDTDWZneUVJNsUACrSc2i7NczKqYVxd3IdLiwh/AjRKzfV10V7w8ETfj0aB/TpUXZ3nqYys4C3C2ZNkAMsTsuhPXAjYcbD2ji9keCvzUfqovLd2h4+7huYBAoYGp95z7C5YA7zUrPiSDJUB+OmgW6Zcb6GkT5MIerg7o8m4OiPN7xXxmJ39ocpBF/0/E1N/kxKU1ITRglQ4nTTFxmLi75hpO+EhGiEu8POe+GsOW323H9G9EjNkvRc6ej1Lkqcbpam5z6UHCBixhiIhih3pQN3ht7ervbQDS38SlN93ciEwF2RHvuMsljA0Cq94dvUFs1BevjCA0CVZU74h6hIzyFqmezrPqufD46+2VR/8Ld7mEn7wJLY23izb6eMZIX/NzUTWYY9mVt6lMFoiF1X/gi1BYY3Cpv87YOYhCFWVdeuzlAdB9Zll05fkZmf8FsXCP6NhNjd2WYFDK1Fs8xtzU+yMu/ZyuotDgnpDYes1JSmpC7JT3Y5pygqphD49Ai94eDQQCTUbCEOSZitjfWHnnzpx2e0xQVSIeAREJNgiDvPlsfW8T/pbBztNoRADQAAAABJRU5ErkJggg==") no-repeat left center transparent;
+    background-size: 100% 100%;
+}
+
+
+
+-->
