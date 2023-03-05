@@ -19,41 +19,66 @@
 <form action="/proyecto-NBA/articles/formulario.html" method="post">
 
         <ul>
+
          <li>
            <label for="name">Nombre:</label>
            <input type="text" id="name" name="user_name" required/>
          </li>
+
          <li>
            <label for="mail">Correo electrónico:</label>
            <input type="email" id="mail" name="user_mail" required/>
          </li>
+
          <li>
-           <label for="question">Pregunta 1: ¿Quién crees que ganará el MVP?</label>
+           <label for="question"><b>Pregunta 1:</b> ¿Quién crees que ganará el MVP?</label>
            <textarea id="text" name="user_message"></textarea>
          </li>
+
          <li>
-            <label for="question">Pregunta 2: ¿Qué equipo crees que se declarará campeón de la Conferencia Este?</label>
+            <label for="question"><b>Pregunta 2:</b> ¿Qué equipo crees que se declarará campeón de la Conferencia Este?</label>
             <textarea id="text" name="user_message"></textarea>
           </li>
+
           <li>
-            <label for="question">Pregunta 3: ¿Qué equipo crees que se declarará campeón de la Conferencia Oeste?</label>
+            <label for="question"><b>Pregunta 3:</b> ¿Qué equipo crees que se declarará campeón de la Conferencia Oeste?</label>
             <textarea id="text" name="user_message"></textarea>
           </li>
+
           <li>
-            <label for="question">Pregunta 4: ¿Cuál es tu equipo favorito?</label>
+            <label for="question"><b>Pregunta 4:</b> ¿Cuál es tu equipo favorito?</label>
             <textarea id="text" name="user_message"></textarea>
           </li>
+
           <li>
-            <label for="question">Pregunta 5: ¿Crees que LeBron James se retirará al final de la temporada?</label>
+            <label for="question"><b>Pregunta 5:</b> ¿Crees que LeBron James se retirará al final de la temporada?</label>
             <textarea id="text" name="user_message"></textarea>
           </li>
+
         </ul>
  
 
 
 
 
+<!-- De aquí para abajo están los botones, no sé si hay que poner las imágenes o hay que incluirlas en los li-->
+    
+    <nav>
+        <a href="#Formulario"><picture>
+            <source media="(max-width: 799px)" srcset="buttons/buttonEnviarSmall.png">
 
+            <source media="(max-width: 799px)" srcset="buttons/buttonEnviar.png">
+
+           <img src="buttons/buttonEnviar.png" alt=""> 
+        </picture></a>
+
+        <a href="#Formulario"><picture>
+            <source media="(max-width: 799px)" srcset="buttons/buttonRestablecerSmall.png">
+
+            <source media="(max-width: 799px)" srcset="buttons/buttonRestablecer.png">
+
+           <img src="buttons/buttonRestablecer.png" alt=""> 
+        </picture></a>
 
     <li class="button">
         <button type="submit">Enviar</button>
@@ -62,6 +87,7 @@
       <li class="button">
         <button type="reset">Restablecer</button>
       </li>
+    </nav>
 </form>
 </body>
 
