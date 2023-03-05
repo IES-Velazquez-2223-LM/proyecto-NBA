@@ -6,6 +6,13 @@ NBA-ADDICTS
 
 Web de noticias y actualidad sobre la NBA.
 
+Secciones: 
+
+* Conferencia Este
+* Conferencia Oeste
+* Editorial
+* MVP
+* Formulario
 
 ## Estado del proyecto
 
