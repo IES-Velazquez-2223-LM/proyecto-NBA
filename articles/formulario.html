@@ -19,11 +19,11 @@
   <header>
     <figure>
       <picture>
-        <source media="(max-width: 799px)" srcset="images/NBAddictsHeaderRedimensionDosResponsive.png">
+        <source media="(max-width: 799px)" srcset="../images/NBAddictsHeaderRedimensionDosResponsive.png">
 
-        <source media="(min-width: 800px)" srcset="images/NBAddictsHeaderRedimensionDos.png">
+        <source media="(min-width: 800px)" srcset="../images/NBAddictsHeaderRedimensionDos.png">
 
-        <img src="images/NBAddictsHeaderRedimensionDos.png" alt="Header noticias NBAddicts">
+        <img src="../images/NBAddictsHeaderRedimensionDos.png" alt="Header noticias NBAddicts">
       </picture>
     </figure>
   </header>
@@ -42,69 +42,97 @@
       </div>
       <div>
         <p>Pregunta 1:</b>¿Quienes son tus favoritos para ganar el MVP?</p>
-        <imput type="checkbox" id="mvpDoncic" name="mvpDoncic" value="mvpDoncic" checked>
         <label for="mvpDoncic">Luka Doncic</label><br>
+        <input type="checkbox" id="mvpDoncic" name="mvpDoncic" value="mvpDoncic" checked>
 
-        <imput type="checkbox" id="mvp" name="mvpTatum" value="mvpTatum" checked>
         <label for="mvpTatum">Jayson Tatum</label><br>
+        <input type="checkbox" id="mvp" name="mvpTatum" value="mvpTatum" checked>
         
-        <imput type="checkbox" id="mvpJokic" name="mvpJokic" value="mvpJokic" checked>
         <label for="mvpJokic">Nikola Jokic</label><br>
+        <input type="checkbox" id="mvpJokic" name="mvpJokic" value="mvpJokic" checked>
 
 
-        <imput type="checkbox" id="mvpGiannis" name="mvpGiannis" value="mvpGiannis" checked>
         <label for="mvpGiannis">Giannis Amtetokumpo</label><br>
+        <input type="checkbox" id="mvpGiannis" name="mvpGiannis" value="mvpGiannis" checked>
       </div>
       <div>
         <p><b>Pregunta 2:</b> ¿Qué equipo crees que se declarará campeón de la Conferencia
           Este?</p>
 
-        <imput type="radio" id="boston" name="boston"></imput>
         <label for="boston">Boston Celtics</label><br>
+        <input type="radio" id="boston" name="champO">
 
-        <imput type="radio" id="milwoki" name="milwoki"></imput>
         <label for="milwoki">Milwoki Bucks</label><br>
+        <input type="radio" id="milwoki" name="champO">
 
-        <imput type="radio" id="caval" name="caval"></imput>
         <label for="caval">Cleveland Cavaliers</label><br>
+        <input type="radio" id="caval" name="champO">
 
-        <imput type="radio" id="nets" name="nets"></imput>
         <label for="nets">Brookling Nets</label><br>
+        <input type="radio" id="nets" name="champO">
       </div>
       <div>
         <p><b>Pregunta 3:</b> ¿Qué equipo crees que se declarará campeón de la Conferencia
           Oeste?</p>
 
-        <imput type="radio" id="denver" name="denver"></imput>
         <label for="denver">Denver Nuggets</label><br>
+        <input type="radio" id="denver" name="champE">
 
-        <imput type="radio" id="grizz" name="grizz"></imput>
         <label for="grizz">Memphis Grizzles</label><br>
+        <input type="radio" id="grizz" name="champE">
 
-        <imput type="radio" id="kings" name="kings"></imput>
         <label for="kings">Sacramento Kings</label><br>
+        <input type="radio" id="kings" name="champE">
 
-        <imput type="radio" id="suns" name="suns"></imput>
         <label for="suns">Phoenix Suns</label><br>
+        <input type="radio" id="suns" name="champE">
       </div>
       <div>
-        <label for="question"><b>Pregunta 4:</b> ¿Cuál es tu equipo favorito?</label>
-        <imput id="text" name="user_message"></imput>
+        <p><b>Pregunta 4:</b> </p>
+        <label for="favTeam">¿Cuál es tu equipo favorito?</label>
+        <input type="text" id="favTeam" name="favTeam">
       </div>
       <div>
-        <label for="question"><b>Pregunta 5:</b> ¿Crees que LeBron James se retirará al final de la temporada?</label>
-        <imput id="text" name="user_message"></imput>
+        <p><b>Pregunta 5: ¿Crees que LeBron James se retirará al final de la temporada?</b></p>
+        <label for="siPre">Si</label>
+        <input type="radio" id="siPre" name="jamesOut">
+        <label for="noPre">No</label>
+        <input type="radio" id="noPre" name="jamesOut">
+      </div>
+      <div>
+        <p><b>Pregunta 6:</b></p>
+        <label for="tiempoConsu">¿Cuanto tiempo consume NBA?(en horas)</label>
+        <input type="number" id="tiempoConsu" name="tiempoConsu">
+      </div>
+      <div>
+        <p><b>Pregunta 7:</b></p>
+        <label for="mes">¿Qué mes ha sido su favorito a nivel de partidos de este año o anteriores?</label>
+        <input type="month" id="month" name="month">
       </div>
 
-
-
+      <div>
+        <p><b>Pregunta 8:</b>¿Dónde consume NBA?</p>
+        <label for="movistar">Movistar</label>
+        <input type="checkbox" name="movistar" id="movistar">
+        <label for="leaguepass">Leagues Pass</label>
+        <input type="checkbox" id="leaguepass" name="leaguepass">
+        <label for="rrss">Redes sociales</label>
+        <input type="checkbox" id="rrss" name="rrss">
+      </div>
+      <div>
+        <p>Pregunta 9: ¿Como de satisfecho está con esta temporada de la NBA de 0 a 10?</p>
+        <label for="sast"></label>
+        <input type="number" max="10" min="0" id="sast" name="sast">
+      </div>
+      <div>
+        <p>Esto es una representación de lo que llevamos de temporada</p>
+        <meter value="160" min="0" max="200" low="60" high="150"></meter>
+      </div>
     </form>
 
 
     <!-- De aquí para abajo están los botones, no sé si hay que poner las imágenes o hay que incluirlas en los li-->
-
-    <nav>
-      <a href="#Formulario">
+<nav> <a href="#Formulario">
         <picture>
           <source media="(max-width: 799px)" srcset="buttons/buttonEnviarSmall.png">
 
