@@ -2,122 +2,129 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jose Antonio y Manuel">
-    <meta name="description" content="Toda la actualidad del Mundo de la NBA">
-    <meta name="robots" content="index,follow">
-    <meta name="keywords" content="NBA, baloncesto, basket, deportes, actualidad NBA, noticias NBA">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Jose Antonio y Manuel">
+  <meta name="description" content="Toda la actualidad del Mundo de la NBA">
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="NBA, baloncesto, basket, deportes, actualidad NBA, noticias NBA">
 
-    <title>NBAddicts</title>
-    <link rel="icon" href="icons/iconoNBA.png" type="image/png" sizes="16x16">
-    <link rel="stylesheet" href="css/style.css">
+  <title>NBAddicts</title>
+  <link rel="icon" href="icons/iconoNBA.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
   <header>
     <figure>
-        <picture>
-            <source media="(max-width: 799px)" srcset="/proyecto-NBA/images/NBAddictsHeaderRedimensionDosResponsive.png">
-    
-            <source media="(min-width: 800px)" srcset="/proyecto-NBA/images/NBAddictsHeaderRedimensionDos.png">
-    
-            <img src="/proyecto-NBA/images/NBAddictsHeaderRedimensionDos.png" alt="Header noticias NBAddicts">
-        </picture>
+      <picture>
+        <source media="(max-width: 799px)" srcset="../images/NBAddictsHeaderRedimensionDosResponsive.png">
+
+        <source media="(min-width: 800px)" srcset="../images/NBAddictsHeaderRedimensionDos.png">
+
+        <img src="../images/NBAddictsHeaderRedimensionDos.png" alt="Header noticias NBAddicts">
+      </picture>
     </figure>
-</header>
+  </header>
+  <main>
+    <h1>Formularios</h1>
+    <form action="/proyecto-NBA/articles/formulario.html" method="post">
 
-<form action="/proyecto-NBA/articles/formulario.html" method="post">
+      <ul>
 
-        <ul>
+        <li>
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="user_name" required autofocus />
+        </li>
 
-         <li>
-           <label for="name">Nombre:</label>
-           <input type="text" id="name" name="user_name" required/>
-         </li>
+        <li>
+          <label for="mail">Correo electrónico:</label>
+          <input type="email" id="mail" name="user_mail" required maxlength="20" minlength="3" />
+        </li>
 
-         <li>
-           <label for="mail">Correo electrónico:</label>
-           <input type="email" id="mail" name="user_mail" required/>
-         </li>
+        <li>
+          <label for="question"><b>Pregunta 1:</b> ¿Quién crees que ganará el MVP?</label>
+          <textarea id="text" name="user_message"></textarea>
+        </li>
 
-         <li>
-           <label for="question"><b>Pregunta 1:</b> ¿Quién crees que ganará el MVP?</label>
-           <textarea id="text" name="user_message"></textarea>
-         </li>
+        <li>
+          <label for="question"><b>Pregunta 2:</b> ¿Qué equipo crees que se declarará campeón de la Conferencia
+            Este?</label>
+          <textarea id="text" name="user_message"></textarea>
+        </li>
 
-         <li>
-            <label for="question"><b>Pregunta 2:</b> ¿Qué equipo crees que se declarará campeón de la Conferencia Este?</label>
-            <textarea id="text" name="user_message"></textarea>
-          </li>
+        <li>
+          <label for="question"><b>Pregunta 3:</b> ¿Qué equipo crees que se declarará campeón de la Conferencia
+            Oeste?</label>
+          <textarea id="text" name="user_message"></textarea>
+        </li>
 
-          <li>
-            <label for="question"><b>Pregunta 3:</b> ¿Qué equipo crees que se declarará campeón de la Conferencia Oeste?</label>
-            <textarea id="text" name="user_message"></textarea>
-          </li>
+        <li>
+          <label for="question"><b>Pregunta 4:</b> ¿Cuál es tu equipo favorito?</label>
+          <textarea id="text" name="user_message"></textarea>
+        </li>
 
-          <li>
-            <label for="question"><b>Pregunta 4:</b> ¿Cuál es tu equipo favorito?</label>
-            <textarea id="text" name="user_message"></textarea>
-          </li>
+        <li>
+          <label for="question"><b>Pregunta 5:</b> ¿Crees que LeBron James se retirará al final de la temporada?</label>
+          <textarea id="text" name="user_message"></textarea>
+        </li>
 
-          <li>
-            <label for="question"><b>Pregunta 5:</b> ¿Crees que LeBron James se retirará al final de la temporada?</label>
-            <textarea id="text" name="user_message"></textarea>
-          </li>
-
-        </ul>
- 
-
+      </ul>
 
 
 
-<!-- De aquí para abajo están los botones, no sé si hay que poner las imágenes o hay que incluirlas en los li-->
-    
-    <nav>
-        <a href="#Formulario"><picture>
+
+
+      <!-- De aquí para abajo están los botones, no sé si hay que poner las imágenes o hay que incluirlas en los li-->
+
+      <nav>
+        <a href="#Formulario">
+          <picture>
             <source media="(max-width: 799px)" srcset="buttons/buttonEnviarSmall.png">
 
             <source media="(max-width: 799px)" srcset="buttons/buttonEnviar.png">
 
-           <img src="buttons/buttonEnviar.png" alt=""> 
-        </picture></a>
+            <img src="buttons/buttonEnviar.png" alt="">
+          </picture>
+        </a>
 
-        <a href="#Formulario"><picture>
+        <a href="#Formulario">
+          <picture>
             <source media="(max-width: 799px)" srcset="buttons/buttonRestablecerSmall.png">
 
             <source media="(max-width: 799px)" srcset="buttons/buttonRestablecer.png">
 
-           <img src="buttons/buttonRestablecer.png" alt=""> 
-        </picture></a>
+            <img src="buttons/buttonRestablecer.png" alt="">
+          </picture>
+        </a>
 
-    <li class="button">
-        <button type="submit">Enviar</button>
-      </li>
+        <li class="button">
+          <button type="submit">Enviar</button>
+        </li>
 
-      <li class="button">
-        <button type="reset">Restablecer</button>
-      </li>
-    </nav>
-</form>
-
-<footer>
+        <li class="button">
+          <button type="reset">Restablecer</button>
+        </li>
+      </nav>
+    </form>
+  </main>
+  <footer>
 
     <a href="/proyecto-NBA/index.html">
-        <picture>
-            <source media="(max-width: 799px)" srcset="../../icons/goBack-300.png">
-            <source media="(min-width: 800px)" srcset="../../icons/goBack-600.png">
-            <img src="/proyecto-NBA/icons/goBack-600.png" alt="Vuelta a la página principal">
-        </picture>
+      <picture>
+        <source media="(max-width: 799px)" srcset="../../icons/goBack-300.png">
+        <source media="(min-width: 800px)" srcset="../../icons/goBack-600.png">
+        <img src="/proyecto-NBA/icons/goBack-600.png" alt="Vuelta a la página principal">
+      </picture>
     </a>
     <p>
-        Alumno1: Manuel <br>
-        Alumno2: José Antonio <br>
-        Asignatura: Lenguaje de Marcas <br>
-        Curso: 2022-2023 <br>
+      Alumno1: Manuel <br>
+      Alumno2: José Antonio <br>
+      Asignatura: Lenguaje de Marcas <br>
+      Curso: 2022-2023 <br>
     </p>
-</footer>
+  </footer>
 </body>
 
 <!-- 
