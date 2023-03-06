@@ -29,93 +29,117 @@
   </header>
   <main>
     <h1>Formularios</h1>
-    <form action="/proyecto-NBA/articles/formulario.html" method="post">
+    <p>Por favor, rellene nuestro cuestionario: </p>
+    <form action="#" method="post" name="formlario">
 
-      <ul>
+      <div>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="user_name" required autofocus tabindex="1" />
+      </div>
+      <div>
+        <label for="mail">Correo electrónico:</label>
+        <input type="email" id="mail" name="user_mail" required maxlength="20" minlength="3" tabindex="2" />
+      </div>
+      <div>
+        <p>Pregunta 1:</b>¿Quienes son tus favoritos para ganar el MVP?</p>
+        <imput type="checkbox" id="mvpDoncic" name="mvpDoncic" value="mvpDoncic" checked>
+        <label for="mvpDoncic">Luka Doncic</label><br>
 
-        <li>
-          <label for="name">Nombre:</label>
-          <input type="text" id="name" name="user_name" required autofocus />
-        </li>
-
-        <li>
-          <label for="mail">Correo electrónico:</label>
-          <input type="email" id="mail" name="user_mail" required maxlength="20" minlength="3" />
-        </li>
-
-        <li>
-          <label for="question"><b>Pregunta 1:</b> ¿Quién crees que ganará el MVP?</label>
-          <textarea id="text" name="user_message"></textarea>
-        </li>
-
-        <li>
-          <label for="question"><b>Pregunta 2:</b> ¿Qué equipo crees que se declarará campeón de la Conferencia
-            Este?</label>
-          <textarea id="text" name="user_message"></textarea>
-        </li>
-
-        <li>
-          <label for="question"><b>Pregunta 3:</b> ¿Qué equipo crees que se declarará campeón de la Conferencia
-            Oeste?</label>
-          <textarea id="text" name="user_message"></textarea>
-        </li>
-
-        <li>
-          <label for="question"><b>Pregunta 4:</b> ¿Cuál es tu equipo favorito?</label>
-          <textarea id="text" name="user_message"></textarea>
-        </li>
-
-        <li>
-          <label for="question"><b>Pregunta 5:</b> ¿Crees que LeBron James se retirará al final de la temporada?</label>
-          <textarea id="text" name="user_message"></textarea>
-        </li>
-
-      </ul>
+        <imput type="checkbox" id="mvp" name="mvpTatum" value="mvpTatum" checked>
+        <label for="mvpTatum">Jayson Tatum</label><br>
+        
+        <imput type="checkbox" id="mvpJokic" name="mvpJokic" value="mvpJokic" checked>
+        <label for="mvpJokic">Nikola Jokic</label><br>
 
 
+        <imput type="checkbox" id="mvpGiannis" name="mvpGiannis" value="mvpGiannis" checked>
+        <label for="mvpGiannis">Giannis Amtetokumpo</label><br>
+      </div>
+      <div>
+        <p><b>Pregunta 2:</b> ¿Qué equipo crees que se declarará campeón de la Conferencia
+          Este?</p>
+
+        <imput type="radio" id="boston" name="boston"></imput>
+        <label for="boston">Boston Celtics</label><br>
+
+        <imput type="radio" id="milwoki" name="milwoki"></imput>
+        <label for="milwoki">Milwoki Bucks</label><br>
+
+        <imput type="radio" id="caval" name="caval"></imput>
+        <label for="caval">Cleveland Cavaliers</label><br>
+
+        <imput type="radio" id="nets" name="nets"></imput>
+        <label for="nets">Brookling Nets</label><br>
+      </div>
+      <div>
+        <p><b>Pregunta 3:</b> ¿Qué equipo crees que se declarará campeón de la Conferencia
+          Oeste?</p>
+
+        <imput type="radio" id="denver" name="denver"></imput>
+        <label for="denver">Denver Nuggets</label><br>
+
+        <imput type="radio" id="grizz" name="grizz"></imput>
+        <label for="grizz">Memphis Grizzles</label><br>
+
+        <imput type="radio" id="kings" name="kings"></imput>
+        <label for="kings">Sacramento Kings</label><br>
+
+        <imput type="radio" id="suns" name="suns"></imput>
+        <label for="suns">Phoenix Suns</label><br>
+      </div>
+      <div>
+        <label for="question"><b>Pregunta 4:</b> ¿Cuál es tu equipo favorito?</label>
+        <imput id="text" name="user_message"></imput>
+      </div>
+      <div>
+        <label for="question"><b>Pregunta 5:</b> ¿Crees que LeBron James se retirará al final de la temporada?</label>
+        <imput id="text" name="user_message"></imput>
+      </div>
 
 
 
-      <!-- De aquí para abajo están los botones, no sé si hay que poner las imágenes o hay que incluirlas en los li-->
-
-      <nav>
-        <a href="#Formulario">
-          <picture>
-            <source media="(max-width: 799px)" srcset="buttons/buttonEnviarSmall.png">
-
-            <source media="(max-width: 799px)" srcset="buttons/buttonEnviar.png">
-
-            <img src="buttons/buttonEnviar.png" alt="">
-          </picture>
-        </a>
-
-        <a href="#Formulario">
-          <picture>
-            <source media="(max-width: 799px)" srcset="buttons/buttonRestablecerSmall.png">
-
-            <source media="(max-width: 799px)" srcset="buttons/buttonRestablecer.png">
-
-            <img src="buttons/buttonRestablecer.png" alt="">
-          </picture>
-        </a>
-
-        <li class="button">
-          <button type="submit">Enviar</button>
-        </li>
-
-        <li class="button">
-          <button type="reset">Restablecer</button>
-        </li>
-      </nav>
     </form>
+
+
+    <!-- De aquí para abajo están los botones, no sé si hay que poner las imágenes o hay que incluirlas en los li-->
+
+    <nav>
+      <a href="#Formulario">
+        <picture>
+          <source media="(max-width: 799px)" srcset="buttons/buttonEnviarSmall.png">
+
+          <source media="(max-width: 799px)" srcset="buttons/buttonEnviar.png">
+
+          <img src="buttons/buttonEnviar.png" alt="">
+        </picture>
+      </a>
+
+      <a href="#Formulario">
+        <picture>
+          <source media="(max-width: 799px)" srcset="buttons/buttonRestablecerSmall.png">
+
+          <source media="(max-width: 799px)" srcset="buttons/buttonRestablecer.png">
+
+          <img src="buttons/buttonRestablecer.png" alt="">
+        </picture>
+      </a>
+
+      <li class="button">
+        <button type="submit">Enviar</button>
+      </li>
+
+      <li class="button">
+        <button type="reset">Restablecer</button>
+      </li>
+    </nav>
   </main>
   <footer>
 
-    <a href="/proyecto-NBA/index.html">
+    <a href="../index.html">
       <picture>
-        <source media="(max-width: 799px)" srcset="../../icons/goBack-300.png">
-        <source media="(min-width: 800px)" srcset="../../icons/goBack-600.png">
-        <img src="/proyecto-NBA/icons/goBack-600.png" alt="Vuelta a la página principal">
+        <source media="(max-width: 799px)" srcset="../icons/goBack-300.png">
+        <source media="(min-width: 800px)" srcset="../icons/goBack-600.png">
+        <img src="../icons/goBack-600.png" alt="Vuelta a la página principal">
       </picture>
     </a>
     <p>
