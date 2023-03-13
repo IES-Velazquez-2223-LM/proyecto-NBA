@@ -44,12 +44,17 @@ footer {
     margin-bottom: 3%;
     margin-left: 18%;
     margin-right: 18%;
+    border-collapse: collapse;
+    border: #000;
 }
 
 .noticiaFinal {
     background-color: rgba(245, 245, 220, 0.788);
     margin-left: 18%;
     margin-right: 18%;
+    padding-bottom: 2%;
+    border-collapse: collapse;
+    border: #000;
 }
 
 .imgIndex {
