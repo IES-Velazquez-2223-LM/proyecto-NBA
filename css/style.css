@@ -12,31 +12,43 @@ main {
 header {
     background-color: rgba(27, 174, 197, 0.893);
     text-align: center;
+    border-width: thick;
+    border: 2px solid #000;
 }
 
 footer {
     background-color: rgba(247, 41, 127, 0.893);
     text-align: center;
+    border-width: thick;
+    border: 2px solid #000;
 }
 
 #ConferenciaO {
     background-color: rgba(255, 1, 1, 0.739);
     border-radius: 20%;
+    border-width: thick;
+    border: 2px solid #000;
 }
 
 #ConferenciaE {
     background-color: rgb(131, 162, 247);
     border-radius: 20%;
+    border-width: thick;
+    border: 2px solid #000;
 }
 
 #Editorial {
     background-color: rgb(220, 232, 95);
     border-radius: 20%;
+    border-width: thick;
+    border: 2px solid #000;
 }
 
 #MVP {
     background-color: rgb(163, 240, 108);
     border-radius: 20%;
+    border-width: thick;
+    border: 2px solid #000;
 }
 
 .noticia {
@@ -44,8 +56,8 @@ footer {
     margin-bottom: 3%;
     margin-left: 18%;
     margin-right: 18%;
-    border-collapse: collapse;
-    border: #000;
+    border-width: thick;
+    border: 2px solid #000;
 }
 
 .noticiaFinal {
@@ -53,8 +65,8 @@ footer {
     margin-left: 18%;
     margin-right: 18%;
     padding-bottom: 2%;
-    border-collapse: collapse;
-    border: #000;
+    border-width: thick;
+    border: 2px solid #000;
 }
 
 .imgIndex {
